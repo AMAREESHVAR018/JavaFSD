@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Portal</title>
+</head>
+<body onbeforeunload="return warningMessage()">
+
+    <video width="400" controls oncanplay="videoReady()">
+        <source src="promo.mp4" type="video/mp4">
+    </video>
+
+    <p id="msg"></p>
+
+    <script>
+
+        function videoReady() {
+            document.getElementById("msg").innerHTML =
+                "Video ready to play";
+        }
+
+        function warningMessage() {
+            return "Your form is unfinished!";
+        }
+
+    </script>
+
+</body>
+
+</html>

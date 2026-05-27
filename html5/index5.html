@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Portal</title>
+    <style>
+        form {
+            width: 300px;
+            padding: 20px;
+            border: 2px solid rgb(61, 1, 239);
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="showMessage(); return false;">
+        Name:
+        <input type="text" placeholder="Enter name"
+            required autofocus><br><br>
+        Email:
+        <input type="email" placeholder="Enter email"
+            required><br><br>
+        Date:
+        <input type="date" required><br><br>
+
+        Event Type:
+        <select required >
+            <option>Music</option>
+            <option>Sports</option>
+            <option>Food</option>
+            <option>Dance</option>
+            <option>Books</option>
+            <option>Art</option>
+        </select><br><br>
+        Message:
+        <textarea placeholder="Your message"></textarea><br><br>
+        <button type="submit">Register</button>
+        <output id="result"></output>
+    </form>
+    <script>
+        function showMessage() {
+            document.getElementById("result").innerHTML =
+                " Registration Successful!";
+        }
+    </script>
+</body>
+</html>

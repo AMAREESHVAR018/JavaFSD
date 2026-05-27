@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Portal</title>
+</head>
+
+<body>
+
+    <select id="eventType" onchange="savePreference()">
+        <option>Music</option>
+        <option>Sports</option>
+        <option>Food</option>
+        <option>Dance</option>
+        <option>Books</option>
+        <option>Art</option>
+    </select>
+
+    <button onclick="clearData()">
+        Clear Preferences
+    </button>
+
+    <script>
+
+        let dropdown =
+            document.getElementById("eventType");
+
+        window.onload = function () {
+
+            let saved =
+                localStorage.getItem("event");
+
+            if (saved) {
+                dropdown.value = saved;
+            }
+        }
+
+        function savePreference() {
+
+            localStorage.setItem(
+                "event",
+                dropdown.value
+            );
+        }
+
+        function clearData() {
+
+            localStorage.clear();
+            sessionStorage.clear();
+
+            alert("Preferences Cleared");
+        }
+
+    </script>
+
+</body>
+
+</html>

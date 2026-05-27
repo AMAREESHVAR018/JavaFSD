@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    Phone:
+    <input type="text" onblur="validatePhone()"
+        id="phone"><br><br>
+    Event Type:
+    <select onchange="showFee(this.value)">
+        <option value="100">Music</option>
+        <option value="200">Sports</option>
+        <option value="150">Food</option>
+        <option value="120">Dance</option>
+        <option value="80">Books</option>
+        <option value="180">Art</option>
+    </select>
+    <p id="fee"></p>
+    <img src="event.jpg" alt="Event Image" width="100"
+        ondblclick="enlarge(this)"><br><br>
+
+    Feedback:
+    <textarea onkeyup="countChars(this)"></textarea>
+
+    <p id="count"></p>
+
+    <button onclick="submitForm()">Submit</button>
+
+    <script>
+
+        function validatePhone() {
+            let phone =
+                document.getElementById("phone").value;
+
+            if (phone.length != 10) {
+                alert("Invalid Phone Number");
+            }
+        }
+
+        function showFee(value) {
+            document.getElementById("fee").innerHTML =
+                "Event Fee: ₹" + value;
+        }
+
+        function submitForm() {
+            alert("Feedback Submitted");
+        }
+
+        function enlarge(img) {
+            img.style.width = "300px";
+        }
+
+        function countChars(txt) {
+            document.getElementById("count").innerHTML =
+                "Characters: " + txt.value.length;
+        }
+
+    </script>
+
+</body>
+
+</html>

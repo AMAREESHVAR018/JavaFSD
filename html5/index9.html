@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Portal</title>
+</head>
+
+<body>
+
+    <button onclick="findLocation()">
+        Find Nearby Events
+    </button>
+
+    <p id="location"></p>
+
+    <script>
+
+        function findLocation() {
+
+            navigator.geolocation.getCurrentPosition(
+                showPosition,
+                showError,
+                {
+                    enableHighAccuracy: true,
+                    timeout: 5000
+                }
+            );
+        }
+
+        function showPosition(position) {
+
+            document.getElementById("location")
+                .innerHTML =
+                "Latitude: "
+                + position.coords.latitude
+                + "<br>Longitude: "
+                + position.coords.longitude;
+        }
+
+        function showError(error) {
+
+            switch (error.code) {
+
+                case error.PERMISSION_DENIED:
+                    alert("Permission Denied");
+                    break;
+
+                case error.TIMEOUT:
+                    alert("Request Timed Out");
+                    break;
+
+                default:
+                    alert("Location Error");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
