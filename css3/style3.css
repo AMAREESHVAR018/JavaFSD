@@ -1,0 +1,71 @@
+/* =========================
+   Universal Selector
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   Body Styles
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+
+/* =========================
+   ID Selector
+   Styles for Main Header
+========================= */
+
+#mainHeader {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   Element Selector
+   Styles for all h2
+========================= */
+
+h2 {
+    color: darkblue;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   Class Selector
+   Styles for Event Cards
+========================= */
+
+.eventCard {
+    background-color: rgb(218, 8, 8);
+    border: 2px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+
+/* =========================
+   Grouping Selector
+   Styles for h3 and p
+========================= */
+
+h3,
+p {
+    color: #444;
+    margin-bottom: 10px;
+}
