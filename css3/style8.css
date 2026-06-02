@@ -1,0 +1,38 @@
+/* Body styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+
+/* Event card styles */
+
+.eventCard {
+    border: 2px solid #007bff;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f5f9ff;
+}
+
+
+/* Form field styles */
+
+.selectedField {
+    padding: 10px;
+    outline: 3px solid orange;
+}
+
+
+/* Hidden text styles */
+
+.hiddenText {
+    visibility: hidden;
+}
+
+
+/* Display none styles */
+
+.noneText {
+    display: none;
+}

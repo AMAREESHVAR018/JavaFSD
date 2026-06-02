@@ -1,0 +1,42 @@
+/* Navigation styles */
+
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+
+/* Navigation item styles */
+
+.menu li {
+    margin: 10px;
+    padding: 10px;
+}
+
+
+/* Link styles */
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: green;
+}
+
+a:visited {
+    color: purple;
+}
+
+
+/* Event list styles */
+
+.events {
+    list-style-type: square;
+    list-style-position: inside;
+}

@@ -1,0 +1,36 @@
+/* Body styles */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+}
+
+
+/* Header styles */
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+/* Section styles */
+
+h2 {
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+/* Description styles */
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    letter-spacing: 1px;
+}
