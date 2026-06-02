@@ -9,3 +9,4 @@ Bootstrap 5
 Core Java
 Most of the HTML, CSS, JavaScript, and Java exercises in this repository were completed by my understanding of programming fundamentals, web development concepts, object-oriented programming.
 For some Bootstrap exercises, I referred to official Bootstrap documentation and learning resources to better understand BootStrap functions.
+ 
